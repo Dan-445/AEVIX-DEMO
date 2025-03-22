@@ -2,8 +2,15 @@ services:
   - type: web
     name: aevix-demo
     env: static
-    buildCommand: echo "Static site, no build needed"
+    buildCommand: npm install && npm run build  # If you're using any build tools
     staticPublishPath: ./
+    envVars:
+      - key: NODE_VERSION
+        value: 18.0.0
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
     routes:
       - type: rewrite
         source: /*
