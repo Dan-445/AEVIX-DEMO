@@ -1,42 +1,6 @@
-# AVERIX Website
+# AEVIX - Algorithmic Evolution & Virtual Intelligence Exchange
 
-Modern website for AVERIX - AI Solutions and Data Analytics Company
-
-## Features
-- Responsive design
-- Modern UI/UX
-- Interactive components
-- Dynamic pricing calculator
-- Blog system
-- Case studies
-- Industry solutions
-
-## Structure
-```
-averix-website/
-├── css/
-├── js/
-├── images/
-├── industries/
-├── components/
-└── pages
-```
-
-## Setup
-1. Clone the repository
-2. Open index.html in your browser
-3. For development, use a local server
-
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
-- Google Fonts
-- Particles.js
-
-## Contact
-For any queries, contact info@averix.com
+A modern, responsive website for Aevix, providing data, AI, and web services.
 
 ## Pages
 1. Home

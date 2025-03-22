@@ -1,6 +1,8 @@
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--gunmetal) 0%, var(--gunmetal-light) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/about/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 8rem 0;
     text-align: center;
@@ -9,14 +11,13 @@
 .hero-section h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #fff, var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation: fadeInUp 1s ease;
 }
 
-.subtitle {
-    font-size: 1.2rem;
+.hero-section .subtitle {
+    font-size: 1.5rem;
     opacity: 0.9;
+    animation: fadeInUp 1s ease 0.2s;
 }
 
 /* Story Section */
@@ -119,8 +120,8 @@
 
 /* Team Section */
 .team-section {
-    padding: 6rem 0;
-    background: #f8f9fa;
+    padding: 5rem 0;
+    background: white;
 }
 
 .team-section h2 {
@@ -132,85 +133,121 @@
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 }
 
 .team-member {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
     transition: transform 0.3s ease;
 }
 
 .team-member:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .team-member img {
-    width: 100%;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
     object-fit: cover;
 }
 
 .team-member h3 {
-    margin: 1rem;
-    color: var(--gunmetal);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.position {
+.team-member .position {
     color: var(--primary-color);
-    margin: 0 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
-.bio {
-    margin: 1rem;
-    color: #666;
+.team-member .bio {
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
 
 /* Timeline Section */
 .timeline-section {
-    padding: 6rem 0;
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
 }
 
 .timeline {
     position: relative;
     max-width: 800px;
-    margin: 3rem auto;
+    margin: 0 auto;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
+    width: 2px;
+    background: var(--primary-color);
+    top: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background: var(--primary-color);
 }
 
 .timeline-item {
-    display: flex;
-    justify-content: center;
     padding: 2rem 0;
+    position: relative;
+    width: 50%;
+    animation: fadeInUp 1s ease;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 3rem;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 3rem;
 }
 
 .year {
+    position: absolute;
+    width: 70px;
+    height: 70px;
     background: var(--primary-color);
+    border-radius: 50%;
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    margin: 0 2rem;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 600;
+    top: 0;
+}
+
+.timeline-item:nth-child(odd) .year {
+    right: -35px;
+}
+
+.timeline-item:nth-child(even) .year {
+    left: -35px;
 }
 
 .content {
     background: white;
     padding: 1.5rem;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 /* Responsive Design */
@@ -242,12 +279,20 @@
     }
 
     .timeline-item {
-        flex-direction: column;
-        margin-left: 50px;
+        width: 100%;
+        padding-left: 70px;
     }
 
-    .year {
-        margin: 0 0 1rem 0;
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item .year {
+        left: 0;
     }
 }
 
