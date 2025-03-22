@@ -1,0 +1,156 @@
+/* Team Page Styles */
+.team-page {
+    padding: 8rem 5% 4rem;
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.team-header h1 {
+    font-size: 3rem;
+    color: var(--gunmetal);
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--gunmetal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(220, 20, 60, 0.1);
+}
+
+.member-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.member-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.team-member:hover .member-overlay {
+    opacity: 1;
+}
+
+.member-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.member-social a {
+    color: #fff;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+    background: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.member-info {
+    padding: 2rem;
+    text-align: center;
+}
+
+.member-info h3 {
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.member-info p {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 6rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--gunmetal);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .team-page {
+        padding: 6rem 5% 3rem;
+    }
+
+    .team-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .team-grid {
+        gap: 2rem;
+    }
+} 

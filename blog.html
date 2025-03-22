@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - AVERIX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo/logo.png" alt="AVERIX" class="logo-img">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header blog-header">
+            <h1>Latest Insights</h1>
+            <p>Stay updated with AI trends and technology insights</p>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-controls">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search articles...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="category-filters">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="ai">AI</button>
+                        <button class="filter-btn" data-category="data">Data</button>
+                        <button class="filter-btn" data-category="tech">Tech</button>
+                    </div>
+                </div>
+
+                <div class="featured-post animated">
+                    <div class="featured-image">
+                        <img src="images/blog/featured.jpg" alt="Featured Post">
+                        <div class="category-tag">Featured</div>
+                    </div>
+                    <div class="featured-content">
+                        <h2>The Future of AI in Business Transformation</h2>
+                        <p class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-user"></i> John Smith</span>
+                            <span><i class="far fa-folder"></i> AI</span>
+                        </p>
+                        <p class="excerpt">Discover how artificial intelligence is revolutionizing business operations and decision-making processes in 2024...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card animated" data-category="ai">
+                        <div class="blog-image">
+                            <img src="images/blog/post1.jpg" alt="Blog Post">
+                            <div class="category-tag">AI</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Machine Learning Trends in 2024</h3>
+                            <p class="post-meta">
+                                <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                                <span><i class="far fa-comments"></i> 12</span>
+                            </p>
+                            <p class="excerpt">Exploring the latest trends in machine learning and their impact on industry...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Add more blog posts with different categories -->
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content animated">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest insights and news delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="cta-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html> 

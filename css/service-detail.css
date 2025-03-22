@@ -1,0 +1,39 @@
+.service-hero {
+    min-height: 50vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 0 4rem;
+}
+
+.service-content {
+    padding: 6rem 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.feature-blocks {
+    display: grid;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-block {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+/* Add more styles... */ 

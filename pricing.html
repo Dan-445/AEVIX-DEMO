@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - AVERIX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo/logo.png" alt="AVERIX" class="logo-img">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-hero">
+            <div class="container">
+                <h1>Simple, Transparent Pricing</h1>
+                <p class="subtitle">Choose the perfect plan for your AI needs</p>
+                <div class="pricing-toggle">
+                    <span>Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Annually <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+            <div class="neural-network" id="neuralNetwork"></div>
+        </section>
+
+        <section class="pricing-grid">
+            <div class="container">
+                <div class="pricing-cards">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Starter</h3>
+                            <p>Perfect for small businesses</p>
+                        </div>
+                        <div class="price-wrapper">
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="1,499" data-annual="1,199">1,499</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p class="price-subtitle">Billed monthly</p>
+                        </div>
+                        <ul class="features">
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>Basic AI Integration</span>
+                                    <small>Single model deployment</small>
+                                </div>
+                            </li>
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>1 Use Case Implementation</span>
+                                    <small>Focused solution for one business area</small>
+                                </div>
+                            </li>
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>8/5 Email & Chat Support</span>
+                                    <small>Response within 24 hours</small>
+                                </div>
+                            </li>
+                            <li><i class="fas fa-check"></i> Basic Online Training</li>
+                            <li><i class="fas fa-check"></i> 5 Team Members</li>
+                            <li><i class="fas fa-check"></i> Basic Analytics Dashboard</li>
+                            <li><i class="fas fa-check"></i> Community Forum Access</li>
+                            <li><i class="fas fa-check"></i> Monthly Performance Reports</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Get Started</a>
+                    </div>
+
+                    <!-- Professional Plan -->
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="card-header">
+                            <h3>Professional</h3>
+                            <p>For growing companies</p>
+                        </div>
+                        <div class="price-wrapper">
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="2,999" data-annual="2,399">2,999</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p class="price-subtitle">Billed monthly</p>
+                        </div>
+                        <ul class="features">
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>Advanced AI Solutions</span>
+                                    <small>Multiple model integration & customization</small>
+                                </div>
+                            </li>
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>3 Use Cases</span>
+                                    <small>Comprehensive solutions for multiple areas</small>
+                                </div>
+                            </li>
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>16/7 Priority Support</span>
+                                    <small>4-hour response time guarantee</small>
+                                </div>
+                            </li>
+                            <li><i class="fas fa-check"></i> Comprehensive Team Training</li>
+                            <li><i class="fas fa-check"></i> 15 Team Members</li>
+                            <li><i class="fas fa-check"></i> Advanced Analytics & Reporting</li>
+                            <li><i class="fas fa-check"></i> API Access</li>
+                            <li><i class="fas fa-check"></i> Custom Development Hours</li>
+                            <li><i class="fas fa-check"></i> Quarterly Strategy Reviews</li>
+                            <li><i class="fas fa-check"></i> Priority Feature Access</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Get Started</a>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Enterprise</h3>
+                            <p>For large organizations</p>
+                        </div>
+                        <div class="price-wrapper">
+                            <div class="price">
+                                <span class="custom-price">Custom</span>
+                            </div>
+                            <p class="price-subtitle">Tailored to your needs</p>
+                        </div>
+                        <ul class="features">
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>Full-Scale AI Implementation</span>
+                                    <small>Enterprise-wide AI transformation</small>
+                                </div>
+                            </li>
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>Unlimited Use Cases</span>
+                                    <small>Complete business integration</small>
+                                </div>
+                            </li>
+                            <li class="feature-highlight">
+                                <i class="fas fa-check"></i>
+                                <div class="feature-detail">
+                                    <span>24/7 Premium Support</span>
+                                    <small>1-hour response time + dedicated manager</small>
+                                </div>
+                            </li>
+                            <li><i class="fas fa-check"></i> Full Team Training Program</li>
+                            <li><i class="fas fa-check"></i> Unlimited Team Members</li>
+                            <li><i class="fas fa-check"></i> Custom Analytics Solutions</li>
+                            <li><i class="fas fa-check"></i> Enterprise API Access</li>
+                            <li><i class="fas fa-check"></i> Dedicated Development Team</li>
+                            <li><i class="fas fa-check"></i> Monthly Strategy Meetings</li>
+                            <li><i class="fas fa-check"></i> Custom SLA</li>
+                            <li><i class="fas fa-check"></i> Early Access to New Features</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add this button after the pricing cards section -->
+        <div class="comparison-trigger">
+            <button id="compareBtn" class="compare-button">
+                <i class="fas fa-table"></i>
+                Compare All Features
+            </button>
+        </div>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What's included in the Starter plan?</h3>
+                        <p>The Starter plan includes basic AI integration for one use case, along with essential support and training. Perfect for businesses looking to implement AI in a specific area of their operations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How does the annual billing discount work?</h3>
+                        <p>When you choose annual billing, you'll receive a 20% discount on your subscription. The amount is billed upfront for the entire year, providing significant savings.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I upgrade my plan later?</h3>
+                        <p>Yes, you can upgrade your plan at any time. The price difference will be prorated for the remainder of your billing period. Our team will ensure a smooth transition.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What kind of support is included?</h3>
+                        <p>Each plan includes different levels of support:<br>
+                           • Starter: 8/5 email and chat support<br>
+                           • Professional: 16/7 priority support with 4-hour response time<br>
+                           • Enterprise: 24/7 premium support with dedicated account manager</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer custom solutions?</h3>
+                        <p>Yes, our Enterprise plan is fully customizable to your needs. We'll work with you to create a tailored solution that meets your specific requirements and scale.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What's the implementation process like?</h3>
+                        <p>We follow a structured implementation process:<br>
+                           1. Initial consultation and needs assessment<br>
+                           2. Solution design and customization<br>
+                           3. Implementation and integration<br>
+                           4. Team training and onboarding<br>
+                           5. Ongoing support and optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Detailed Feature Comparison</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Starter</th>
+                                <th>Professional</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AI Integration</td>
+                                <td>Basic</td>
+                                <td>Advanced</td>
+                                <td>Full-Scale</td>
+                            </tr>
+                            <tr>
+                                <td>Use Cases</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Support Level</td>
+                                <td>8/5 Basic</td>
+                                <td>16/7 Priority</td>
+                                <td>24/7 Premium</td>
+                            </tr>
+                            <tr>
+                                <td>Response Time</td>
+                                <td>24 hours</td>
+                                <td>4 hours</td>
+                                <td>1 hour</td>
+                            </tr>
+                            <tr>
+                                <td>Training</td>
+                                <td>Basic Online</td>
+                                <td>Comprehensive</td>
+                                <td>Full Team + Custom</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Development</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>API Access</td>
+                                <td>Limited</td>
+                                <td>Full Access</td>
+                                <td>Enterprise API</td>
+                            </tr>
+                            <tr>
+                                <td>Analytics</td>
+                                <td>Basic</td>
+                                <td>Advanced</td>
+                                <td>Custom</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Transform your business with AEVIX's AI solutions</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button primary">Contact Sales</a>
+                    <a href="about.html" class="cta-button secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add this modal structure at the end of main section -->
+    <div id="comparisonModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Detailed Feature Comparison</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="comparison-table">
+                <table>
+                    <!-- Your existing table content -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html> 

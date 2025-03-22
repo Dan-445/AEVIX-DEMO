@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - AVERIX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">AVERIX</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="contact.html" class="cta-button glow">
+                    <span>Get Started</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="careers-page">
+        <div class="careers-hero">
+            <div class="hero-content">
+                <h1>Join Our Team</h1>
+                <p>Shape the future of AI with us</p>
+                <a href="#positions" class="cta-button glow">View Open Positions</a>
+            </div>
+            <div class="hero-particles" id="particles-js"></div>
+        </div>
+
+        <section class="benefits-section">
+            <h2>Why Join AVERIX?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Innovation First</h3>
+                    <p>Work on cutting-edge AI technology</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Growth Opportunities</h3>
+                    <p>Clear career progression paths</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-laptop-house"></i>
+                    <h3>Flexible Work</h3>
+                    <p>Remote-first culture</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-heart"></i>
+                    <h3>Great Benefits</h3>
+                    <p>Comprehensive healthcare & more</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="positions" class="positions-section">
+            <h2>Open Positions</h2>
+            <div class="positions-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+            </div>
+            
+            <div class="positions-grid">
+                <div class="position-card" data-category="engineering">
+                    <div class="position-header">
+                        <h3>Senior ML Engineer</h3>
+                        <span class="position-type">Full-time</span>
+                    </div>
+                    <div class="position-details">
+                        <p>Lead the development of our machine learning models.</p>
+                        <ul class="position-requirements">
+                            <li>5+ years ML experience</li>
+                            <li>Python, TensorFlow, PyTorch</li>
+                            <li>Strong math background</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- More position cards -->
+            </div>
+        </section>
+
+        <section class="application-section" id="apply-form">
+            <div class="application-container">
+                <h2>Apply Now</h2>
+                <p>Fill out the form below to submit your application</p>
+                
+                <form class="application-form" id="jobApplication">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="position">Position Applied For *</label>
+                            <select id="position" required>
+                                <option value="">Select Position</option>
+                                <option value="ml-engineer">Senior ML Engineer</option>
+                                <option value="data-scientist">Data Scientist</option>
+                                <option value="ai-researcher">AI Researcher</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="experience">Years of Experience *</label>
+                            <input type="number" id="experience" min="0" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="coverLetter">Cover Letter *</label>
+                            <textarea id="coverLetter" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label>Resume/CV *</label>
+                            <div class="file-upload">
+                                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                                <label for="resume" class="file-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Upload Resume (PDF, DOC, DOCX)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label>Additional Documents</label>
+                            <div class="file-upload">
+                                <input type="file" id="additional" accept=".pdf,.doc,.docx" multiple>
+                                <label for="additional" class="file-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Upload Additional Files</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <!-- Company Info Section -->
+            <div class="footer-section company-info">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="AVERIX" class="footer-logo-img">
+                    <span>AVERIX</span>
+                </div>
+                <p class="company-desc">Transforming businesses through innovative AI solutions and data-driven insights. Your trusted partner in digital transformation.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/company/averix" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/averix" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com/averix" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/averix.ai" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/averix" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Solutions Section -->
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#ai-solutions">AI Solutions</a></li>
+                    <li><a href="services.html#data-analytics">Data Analytics</a></li>
+                    <li><a href="services.html#machine-learning">Machine Learning</a></li>
+                    <li><a href="services.html#cloud-services">Cloud Services</a></li>
+                    <li><a href="services.html#consulting">AI Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="news.html">News & Updates</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Newsletter Section -->
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <ul class="contact-details">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Street, Silicon Valley<br>CA 94025, USA</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@averix.com</span>
+                    </li>
+                </ul>
+                <div class="newsletter">
+                    <h4>Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="cta-button glow">
+                                <span>Subscribe</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="cookies.html">Cookie Policy</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            <p class="copyright">&copy; 2024 AVERIX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

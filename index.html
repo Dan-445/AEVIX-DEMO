@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVERIX - AI Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo/logo.png" alt="AEVIX" class="logo-img">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="particles-js" class="particle-background"></div>
+        
+        <section class="hero-modern">
+            <div class="neural-animation">
+                <!-- Neural network animation container -->
+                <div class="nodes"></div>
+            </div>
+            
+            <div class="hero-content-wrapper">
+                <div class="hero-main">
+                    <h1 class="animated-heading">
+                        <span class="gradient-text">Revolutionizing</span>
+                        <span class="typing-text">Industries</span>
+                        <span>Through AI Innovation</span>
+                    </h1>
+                    <p class="hero-description">
+                        Harness the power of artificial intelligence to transform your business. 
+                        From predictive analytics to machine learning solutions, we're your partner 
+                        in digital evolution.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="contact.html" class="cta-button glow">Start Your AI Journey</a>
+                        <a href="services.html" class="cta-button outline pulse">Explore Solutions</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/hero/backgrounds/neural-network.jpg" alt="AI Neural Network" class="hero-image">
+                    <div class="hero-pattern">
+                        <img src="images/hero/patterns/circuit.svg" alt="" class="pattern-overlay">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions-showcase">
+            <h2 class="section-title">Our AI Solutions</h2>
+            <div class="solutions-grid">
+                <!-- Machine Learning Card -->
+                <div class="solution-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Advanced algorithms that learn and adapt to your business needs</p>
+                    <div class="tech-stack">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <!-- NLP Card -->
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Natural Language Processing</h3>
+                    <p>Transform text data into actionable insights with advanced NLP</p>
+                    <div class="tech-stack">
+                        <span>BERT</span>
+                        <span>GPT</span>
+                        <span>NLTK</span>
+                    </div>
+                </div>
+
+                <!-- Deep Learning Card -->
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <p>Neural networks that solve complex pattern recognition problems</p>
+                    <div class="tech-stack">
+                        <span>CNN</span>
+                        <span>RNN</span>
+                        <span>Transformers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-process-modern">
+            <h2 class="section-title">Our AI Implementation Journey</h2>
+            <p class="section-subtitle">Transform your business with our proven 4-step implementation process</p>
+            
+            <div class="process-container">
+                <div class="process-visualization">
+                    <div class="neural-network">
+                        <canvas id="processCanvas"></canvas>
+                    </div>
+                    
+                    <div class="process-nodes">
+                        <div class="process-node active" data-step="1">
+                            <div class="node-content">
+                                <div class="node-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                                <span class="node-number">01</span>
+                            </div>
+                            <div class="node-pulse"></div>
+                        </div>
+                        <div class="process-node" data-step="2">
+                            <div class="node-content">
+                                <div class="node-icon">
+                                    <i class="fas fa-drafting-compass"></i>
+                                </div>
+                                <span class="node-number">02</span>
+                            </div>
+                            <div class="node-pulse"></div>
+                        </div>
+                        <div class="process-node" data-step="3">
+                            <div class="node-content">
+                                <div class="node-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <span class="node-number">03</span>
+                            </div>
+                            <div class="node-pulse"></div>
+                        </div>
+                        <div class="process-node" data-step="4">
+                            <div class="node-content">
+                                <div class="node-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <span class="node-number">04</span>
+                            </div>
+                            <div class="node-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-details">
+                    <div class="process-step-content active" data-step="1">
+                        <div class="step-header">
+                            <h3>Discovery & Analysis</h3>
+                            <div class="step-tag">Phase 1</div>
+                        </div>
+                        <p class="step-description">
+                            We dive deep into your business DNA to uncover opportunities where AI can create the most impact. Our expert team analyzes your current infrastructure and maps out a transformative journey.
+                        </p>
+                        <ul class="step-features">
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-clipboard-check"></i></span>
+                                <div class="feature-content">
+                                    <h4>Strategic Assessment</h4>
+                                    <p>Comprehensive analysis of your business goals and challenges</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-database"></i></span>
+                                <div class="feature-content">
+                                    <h4>Data Evaluation</h4>
+                                    <p>In-depth assessment of your data infrastructure and quality</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-microscope"></i></span>
+                                <div class="feature-content">
+                                    <h4>Feasibility Study</h4>
+                                    <p>Technical analysis to ensure optimal AI implementation</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step-content" data-step="2">
+                        <div class="step-header">
+                            <h3>Solution Architecture</h3>
+                            <div class="step-tag">Phase 2</div>
+                        </div>
+                        <p class="step-description">
+                            Our AI architects craft a custom solution blueprint that aligns perfectly with your business objectives. We combine cutting-edge technology with practical implementation strategies.
+                        </p>
+                        <ul class="step-features">
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-sitemap"></i></span>
+                                <div class="feature-content">
+                                    <h4>Custom Blueprint</h4>
+                                    <p>Tailored architectural design for your specific needs</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-layer-group"></i></span>
+                                <div class="feature-content">
+                                    <h4>Tech Stack Selection</h4>
+                                    <p>Curated selection of best-in-class AI technologies</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-code"></i></span>
+                                <div class="feature-content">
+                                    <h4>Rapid Prototyping</h4>
+                                    <p>Quick validation of concepts through working prototypes</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step-content" data-step="3">
+                        <div class="step-header">
+                            <h3>AI Development & Training</h3>
+                            <div class="step-tag">Phase 3</div>
+                        </div>
+                        <p class="step-description">
+                            Watch your AI solution come to life as our experts develop and train models using your data. We ensure exceptional accuracy and performance through rigorous testing and optimization.
+                        </p>
+                        <ul class="step-features">
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-brain"></i></span>
+                                <div class="feature-content">
+                                    <h4>Model Development</h4>
+                                    <p>Creation of sophisticated AI models tailored to your needs</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-cogs"></i></span>
+                                <div class="feature-content">
+                                    <h4>Advanced Training</h4>
+                                    <p>Intensive model training using your specific data sets</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-chart-line"></i></span>
+                                <div class="feature-content">
+                                    <h4>Performance Tuning</h4>
+                                    <p>Continuous optimization for peak performance</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step-content" data-step="4">
+                        <div class="step-header">
+                            <h3>Deployment & Evolution</h3>
+                            <div class="step-tag">Phase 4</div>
+                        </div>
+                        <p class="step-description">
+                            Experience seamless integration of your AI solution into your existing infrastructure. We ensure smooth adoption and provide ongoing support for continuous improvement.
+                        </p>
+                        <ul class="step-features">
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-rocket"></i></span>
+                                <div class="feature-content">
+                                    <h4>Seamless Integration</h4>
+                                    <p>Smooth deployment into your existing systems</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-tachometer-alt"></i></span>
+                                <div class="feature-content">
+                                    <h4>Performance Monitoring</h4>
+                                    <p>Real-time tracking and optimization of your AI solution</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i class="fas fa-users-cog"></i></span>
+                                <div class="feature-content">
+                                    <h4>Team Enablement</h4>
+                                    <p>Comprehensive training and ongoing support for your team</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies">
+            <h2 class="section-title">Success Stories</h2>
+            <p class="section-subtitle">Real results from real clients</p>
+            
+            <div class="case-studies-grid">
+                <div class="case-study-card" data-aos="fade-up">
+                    <div class="case-study-image" style="background-image: url('images/healthcare-ai.jpg')">
+                        <div class="industry-tag">Healthcare</div>
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="case-study-content">
+                        <h3>AI-Powered Diagnostic Support</h3>
+                        <p class="case-description">
+                            Revolutionized patient diagnosis accuracy for a leading healthcare provider using advanced machine learning algorithms.
+                        </p>
+                        <div class="achievement-grid">
+                            <div class="achievement">
+                                <div class="achievement-value">45%</div>
+                                <div class="achievement-label">Accuracy Increase</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-value">30%</div>
+                                <div class="achievement-label">Time Saved</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-value">50K+</div>
+                                <div class="achievement-label">Patients Served</div>
+                            </div>
+                        </div>
+                        <a href="case-studies/healthcare-ai.html" class="case-study-link">
+                            Explore Case Study
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="case-study-card" data-aos="fade-up">
+                    <div class="case-study-image" style="background-image: url('images/finance-ai.jpg')">
+                        <div class="industry-tag">Finance</div>
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Fraud Detection System</h3>
+                        <p class="case-description">
+                            Implemented AI-powered fraud detection for a major bank, reducing fraudulent transactions by 92% and saving $50M annually.
+                        </p>
+                        <div class="achievement-grid">
+                            <div class="achievement">
+                                <div class="achievement-value">92%</div>
+                                <div class="achievement-label">Fraud Reduction</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-value">$50M</div>
+                                <div class="achievement-label">Savings</div>
+                            </div>
+                        </div>
+                        <a href="case-studies/fraud-detection.html" class="case-study-link">
+                            Explore Case Study
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="case-study-card" data-aos="fade-up">
+                    <div class="case-study-image" style="background-image: url('images/smart-factory.jpg')">
+                        <div class="industry-tag">Manufacturing</div>
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="case-study-content">
+                        <h3>Smart Factory Automation</h3>
+                        <p class="case-description">
+                            Revolutionized production efficiency with AI-driven predictive maintenance and quality control, resulting in a 35% efficiency gain and a 60% defect reduction.
+                        </p>
+                        <div class="achievement-grid">
+                            <div class="achievement">
+                                <div class="achievement-value">35%</div>
+                                <div class="achievement-label">Efficiency Gain</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-value">60%</div>
+                                <div class="achievement-label">Defect Reduction</div>
+                            </div>
+                        </div>
+                        <a href="case-studies/smart-factory.html" class="case-study-link">
+                            Explore Case Study
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Success stories from industry leaders</p>
+            
+            <div class="testimonials-wrapper">
+                <div class="testimonial-slider">
+                    <!-- Healthcare Testimonial -->
+                    <div class="testimonial-card active" data-index="1">
+                        <div class="testimonial-content">
+                            <div class="client-image">
+                                <img src="images/testimonial-1.jpg" alt="Dr. Sarah Johnson">
+                                <div class="client-company-logo">
+                                    <img src="images/healthtech-logo.png" alt="HealthTech Solutions Logo">
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <div class="quote-marks">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>AVERIX's AI diagnostic system has revolutionized our patient care. We've seen dramatic improvements in early detection rates and treatment outcomes. Their team's expertise and support throughout the implementation were exceptional.</p>
+                                <div class="client-info">
+                                    <h4>Dr. Sarah Johnson</h4>
+                                    <span class="client-role">Chief of Medicine</span>
+                                    <span class="client-company">HealthTech Solutions</span>
+                                </div>
+                                <div class="testimonial-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">40%</span>
+                                        <span class="stat-label">Faster Diagnosis</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">93%</span>
+                                        <span class="stat-label">Accuracy Rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finance Testimonial -->
+                    <div class="testimonial-card" data-index="2">
+                        <div class="testimonial-content">
+                            <div class="client-image">
+                                <img src="images/testimonial-2.jpg" alt="Michael Chen">
+                                <div class="client-company-logo">
+                                    <img src="images/fintech-logo.png" alt="Global FinTech Logo">
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <div class="quote-marks">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>Implementing AVERIX's fraud detection system was a game-changer for our financial operations. The AI's ability to detect patterns and prevent fraudulent transactions in real-time has saved us millions.</p>
+                                <div class="client-info">
+                                    <h4>Michael Chen</h4>
+                                    <span class="client-role">Chief Technology Officer</span>
+                                    <span class="client-company">Global FinTech Solutions</span>
+                                </div>
+                                <div class="testimonial-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">95%</span>
+                                        <span class="stat-label">Fraud Prevention</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">$12M</span>
+                                        <span class="stat-label">Annual Savings</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Manufacturing Testimonial -->
+                    <div class="testimonial-card" data-index="3">
+                        <div class="testimonial-content">
+                            <div class="client-image">
+                                <img src="images/testimonial-3.jpg" alt="Emily Rodriguez">
+                                <div class="client-company-logo">
+                                    <img src="images/industrial-logo.png" alt="Smart Manufacturing Logo">
+                                </div>
+                            </div>
+                            <div class="testimonial-text">
+                                <div class="quote-marks">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>The predictive maintenance AI from AVERIX has transformed our manufacturing processes. Downtime has been reduced significantly, and our production efficiency has reached new heights.</p>
+                                <div class="client-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <span class="client-role">Operations Director</span>
+                                    <span class="client-company">Smart Manufacturing Inc.</span>
+                                </div>
+                                <div class="testimonial-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">85%</span>
+                                        <span class="stat-label">Less Downtime</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">60%</span>
+                                        <span class="stat-label">Cost Reduction</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls">
+                    <button class="nav-btn prev-btn" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-indicators">
+                        <button class="indicator active" data-index="1"></button>
+                        <button class="indicator" data-index="2"></button>
+                        <button class="indicator" data-index="3"></button>
+                    </div>
+                    <button class="nav-btn next-btn" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's discuss how our AI solutions can help you achieve your goals.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button glow">Schedule a Demo</a>
+                    <a href="tel:+1234567890" class="cta-button outline">Call Us Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <!-- Company Info Section -->
+            <div class="footer-section company-info">
+                <div class="footer-logo">AVERIX</div>
+                <p class="company-desc">Transforming businesses through innovative AI solutions and data-driven insights.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/company/averix" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/averix" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com/averix" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/averix.ai" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/averix" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Solutions Section -->
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="services.html#ai-solutions">AI Solutions</a></li>
+                    <li><a href="services.html#data-analytics">Data Analytics</a></li>
+                    <li><a href="services.html#machine-learning">Machine Learning</a></li>
+                    <li><a href="services.html#cloud-services">Cloud Services</a></li>
+                    <li><a href="services.html#consulting">AI Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="news.html">News & Updates</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <ul class="contact-details">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Street, Silicon Valley<br>CA 94025, USA</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@averix.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="cookies.html">Cookie Policy</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+            <p class="copyright">&copy; 2024 AVERIX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle">
+            <button class="chat-toggle-btn">
+                <i class="fas fa-comments"></i>
+                <span class="notification-badge">1</span>
+            </button>
+        </div>
+        
+        <div class="chatbot-window">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <img src="images/icons/ui/logo.png" alt="AVERIX" class="chat-logo">
+                    <div class="chat-info">
+                        <h3>AVERIX Assistant</h3>
+                        <span class="status">Online</span>
+                    </div>
+                </div>
+                <button class="minimize-btn">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm AVERIX Assistant. How can I help you today?</p>
+                        <div class="quick-replies">
+                            <button class="quick-reply">Services</button>
+                            <button class="quick-reply">Pricing</button>
+                            <button class="quick-reply">Contact</button>
+                            <button class="quick-reply">About Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="user-input">
+                <button class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add these before closing body tag -->
+    <link rel="stylesheet" href="css/chatbot.css">
+    <script src="js/chatbot.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

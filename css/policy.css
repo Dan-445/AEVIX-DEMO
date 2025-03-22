@@ -1,0 +1,106 @@
+/* Policy Pages Styling */
+.policy-page {
+    padding: 8rem 5% 4rem;
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+}
+
+.policy-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.policy-header h1 {
+    font-size: 2.8rem;
+    color: var(--gunmetal);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.policy-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    border-radius: 2px;
+}
+
+.policy-header p {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+.policy-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.policy-section {
+    margin-bottom: 3rem;
+}
+
+.policy-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(220, 20, 60, 0.1);
+}
+
+.policy-section h3 {
+    color: var(--gunmetal);
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+}
+
+.policy-section p {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.policy-section ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.policy-section ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.policy-section ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .policy-page {
+        padding: 6rem 5% 3rem;
+    }
+
+    .policy-content {
+        padding: 2rem;
+    }
+
+    .policy-header h1 {
+        font-size: 2.2rem;
+    }
+} 
